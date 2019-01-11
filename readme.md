@@ -29,11 +29,16 @@ Make your changes however you see fit locally. Once finished or you wish to shar
 
 ` git commit -m "<you're message>"` //use this to add a message with your commit. The code get's complicated.. Add the message please.
 
-` git push ` //This will send all changes to the remote repo.
+` git push origin <branch name>` //This will send all changes to the remote repo.
 
 ## Once you're ready to submit your changes to the main branch again follow these instructions.
+
 
 Log into github and request a new pull request.
 ![Github website has the button to make the pull request](https://storage.googleapis.com/cdn.thenewstack.io/media/2018/06/475ba6ad-screen-shot-2018-06-27-at-3.18.09-pm-1024x563.png)
 
+Then you'll get to a screen like this.
 
+![Create make options for pull request](https://storage.googleapis.com/cdn.thenewstack.io/media/2018/06/9545f137-prcreate-1024x627.png)
+
+Citation: https://thenewstack.io/getting-legit-with-git-and-github-your-first-pull-request/
