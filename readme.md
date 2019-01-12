@@ -5,9 +5,9 @@ cd into ether the MPMissions or missions folder. This folder is located in ~/Doc
 
 Install git. [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-git config --global user.name "FIRST_NAME LAST_NAME" //I just use varnem2 or Dash.B
+git config --global user.name "FIRST_NAME LAST_NAME" //Just use a name that's easily identifiable
 
-git config --global user.email "MY_NAME@example.com" //You'll find this email in 
+git config --global user.email "MY_NAME@example.com" //You'll find this email in
 
 ###### https://github.com/settings/emails look under the section of Primary email address you'll see a huge long email with lots of numbers. Use that one.
 
@@ -37,6 +37,9 @@ Make your changes however you see fit locally. Once finished or you wish to shar
 `git add . `//this adds all the files both in the folder you're in and all the subfolders you are in.
 
 ` git commit -m "<you're message>"` //use this to add a message with your commit. The code get's complicated.. Add the message please.
+
+
+##If you're making a map, or doing anything with the map, ensure that you view the miscellaneous folder's readme to make sure it is compattable with our server.
 
 ` git push origin <branch name>` //This will send all changes to the remote repo.
 
