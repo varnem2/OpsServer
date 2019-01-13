@@ -24,5 +24,5 @@ To give Eden access to these custom compositions open up the file explorer. Loca
 #### 10SOCSpawn
 This is the required spawn that needs to be somewhere on the map. It does not matter where said players are located, they just need to be on a land mass somewhere on the map. If you do not mess with this composition it will provide all the required number and order of the slots.
 
-### GameMasterHC
+#### GameMasterHC
 This composition includes all the administration tools. Providing the correct Zues slots, headless clients, etc. Place this composition off the playing area to keep your map clean. Do not touch anything within this composition.
