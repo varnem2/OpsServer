@@ -9,7 +9,7 @@ _spawnMarker = _spawnPoints select (floor random (count _spawnPoints));
 _unitsSpawnPosition = getMarkerPos _spawnMarker; //[x,y,z]
 
 _newGroup = createGroup [east,true];
-_newLeader = "rhs_vdv_flora_junior_sergeant createUnit [
+_newLeader = "rhs_vdv_flora_junior_sergeant" createUnit [
         _unitsSpawnPosition, 
         _newGroup, 
         'newLeader = this; 
