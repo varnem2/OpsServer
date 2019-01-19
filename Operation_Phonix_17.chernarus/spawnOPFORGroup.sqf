@@ -2,14 +2,14 @@
 if !(isServer) exitWith {};
 
 _spawnPoints = ["opfor4","opfor3","opfor2","opfor1","opfor5","opfor6","opfor7"];
-_unitsInGroup = ["O_recon_medic_F","O_recon_JTAC_F","O_recon_M_F","O_recon_JTAC_F","O_recon_exp_F"];
+_unitsInGroup = ["rhs_vdv_flora_at","rhs_vdv_flora_aa","rhs_vdv_flora_machinegunner","rhs_vdv_flora_rifleman","rhs_vdv_flora_rifleman"];
 
 _spawnMarker = _spawnPoints select (floor random (count _spawnPoints));
 
 _unitsSpawnPosition = getMarkerPos _spawnMarker; //[x,y,z]
 
 _newGroup = createGroup [east,true];
-_newLeader = "O_recon_TL_F" createUnit [
+_newLeader = "rhs_vdv_flora_junior_sergeant createUnit [
         _unitsSpawnPosition, 
         _newGroup, 
         'newLeader = this; 
