@@ -11,7 +11,7 @@ _unitsSpawnPosition = getMarkerPos _spawnMarker; //[x,y,z]
 _newGroup = createGroup [west,true];
 _newLeader = "B_Soldier_SL_F" createUnit [
         _unitsSpawnPosition, 
-        newGroup, 
+        _newGroup, 
         'newLeader = this; 
         0 = [
                 this, 
