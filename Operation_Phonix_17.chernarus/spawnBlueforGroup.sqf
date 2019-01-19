@@ -8,14 +8,14 @@ _spawnMarker = _spawnPoints select (floor random (count _spawnPoints));
 
 _unitsSpawnPosition = getMarkerPos _spawnMarker; //[x,y,z]
 
-newGroup = createGroup [west,true];
+_newGroup = createGroup [west,true];
 _newLeader = "B_Soldier_SL_F" createUnit [
         _unitsSpawnPosition, 
         newGroup, 
         'newLeader = this; 
         0 = [
                 this, 
-                "DELAY=", [5,10], 
+                "DELAY=", [30,60], 
                 "RESPAWNMARKERS=", ["bluefor1","bluefor2"],
                 "PAUSE=", 2
             ] spawn jebus_fnc_main;'
@@ -23,9 +23,9 @@ _newLeader = "B_Soldier_SL_F" createUnit [
 sleep .2;
 
 {
-    _newUnit = _x createUnit [_unitsSpawnPosition, newGroup, "newUnit = this"];
+    _newUnit = _x createUnit [_unitsSpawnPosition, _newGroup, "newUnit = this"];
     sleep .6;
 }forEach _unitsInGroup;
 
-[newGroup, getPos areaOfOperation, 150] call BIS_fnc_taskAttack; //this has to change
+[_newGroup, getPos areaOfOperation, 150] call BIS_fnc_taskAttack; //this has to change
 sleep 4;

@@ -8,10 +8,10 @@ _spawnMarker = _spawnPoints select (floor random (count _spawnPoints));
 
 _unitsSpawnPosition = getMarkerPos _spawnMarker; //[x,y,z]
 
-newGroup = createGroup [east,true];
+_newGroup = createGroup [east,true];
 _newLeader = "O_recon_TL_F" createUnit [
         _unitsSpawnPosition, 
-        newGroup, 
+        _newGroup, 
         'newLeader = this; 
         0 = [
                 this, 
@@ -23,9 +23,9 @@ _newLeader = "O_recon_TL_F" createUnit [
 sleep .2;
 
 {
-    _newUnit = _x createUnit [_unitsSpawnPosition, newGroup, "newUnit = this"];
+    _newUnit = _x createUnit [_unitsSpawnPosition, _newGroup, "newUnit = this"];
     sleep .6;
 }forEach _unitsInGroup;
 
-[newGroup, getPos areaOfOperation, 150] call BIS_fnc_taskAttack;
+[_newGroup, getPos areaOfOperation, 150] call BIS_fnc_taskAttack;
 sleep 4;
