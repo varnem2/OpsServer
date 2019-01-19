@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14343.812,72.330147,9640.4023};
-		dir[]={0.44572437,-0.89107972,-0.08568006};
-		up[]={0.87506038,0.45384365,-0.16821033};
-		aside[]={-0.188775,7.11967e-007,-0.98203772};
+		pos[]={14349.576,15.216153,9613.6826};
+		dir[]={-0.7816605,-0.26278579,0.56572998};
+		up[]={-0.21292676,0.96483284,0.15410782};
+		aside[]={0.58633268,5.6112185e-008,0.81012523};
 	};
 };
 binarizationWanted=0;
@@ -14674,7 +14674,7 @@ class Mission
 			};
 			id=2054;
 			type="B_Boat_Transport_01_F";
-			atlOffset=150.45447;
+			atlOffset=150.45442;
 		};
 		class Item22
 		{
@@ -14692,7 +14692,7 @@ class Mission
 			};
 			id=2057;
 			type="RHS_UH60M2";
-			atlOffset=1.5258789e-005;
+			atlOffset=0.012908936;
 		};
 		class Item23
 		{
@@ -14710,7 +14710,7 @@ class Mission
 			};
 			id=2066;
 			type="O_supplyCrate_F";
-			atlOffset=2.0980835e-005;
+			atlOffset=0.0060882568;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14991,7 +14991,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2309542,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15002,7 +15002,7 @@ class Mission
 					};
 					id=2144;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=122.517;
+					atlOffset=122.6356;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15120,7 +15120,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15129,7 +15129,7 @@ class Mission
 					};
 					id=2145;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15247,7 +15247,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15256,14 +15256,14 @@ class Mission
 					};
 					id=2146;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15272,14 +15272,14 @@ class Mission
 					};
 					id=2147;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15288,14 +15288,14 @@ class Mission
 					};
 					id=2148;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15304,14 +15304,14 @@ class Mission
 					};
 					id=2149;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14173.793,4.2307634,9517.4189};
+						position[]={14176.413,4.31915,9526.2939};
 						angles[]={0,4.7972116,0};
 					};
 					side="West";
@@ -15320,7 +15320,7 @@ class Mission
 					};
 					id=2150;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=122.51681;
+					atlOffset=122.6356;
 				};
 			};
 			class Attributes
@@ -15414,14 +15414,14 @@ class Mission
 				};
 			};
 			id=2143;
-			atlOffset=122.51681;
+			atlOffset=122.6356;
 		};
 		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14173.793,7.8768778,9517.3691};
+				position[]={14176.413,7.9652643,9526.2441};
 				angles[]={0,4.7972116,0};
 			};
 			side="West";
@@ -15431,7 +15431,7 @@ class Mission
 			};
 			id=2151;
 			type="rhsusf_mkvsoc";
-			atlOffset=122.51681;
+			atlOffset=122.6356;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29690,12 +29690,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14374.895,12.565607,9617.7656};
+				position[]={14375.912,13.899999,9621.2559};
 			};
 			name="respawn_west_1";
 			id=4318;
 			type="ModuleRespawnPosition_F";
-			atlOffset=1.1144838;
+			atlOffset=2.473402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30100,7 +30100,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
@@ -30159,7 +30158,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="76561198055179252 ";
+							value="76561198055179252";
 						};
 					};
 				};
