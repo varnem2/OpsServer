@@ -27,5 +27,5 @@ sleep .2;
     sleep .6;
 }forEach _unitsInGroup;
 
-[_newGroup, getPos areaOfOperation, 150] call BIS_fnc_taskAttack;
+[_newGroup, getPos areaOfOperation, 250] call BIS_fnc_taskAttack;
 sleep 4;
