@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=921;
+		nextID=1035;
 	};
 	class Camera
 	{
-		pos[]={13191.639,51.873447,10346.906};
-		dir[]={-0.60450768,-0.77006841,-0.20446168};
-		up[]={-0.72943747,0.63774073,-0.24672672};
-		aside[]={-0.32040614,-1.8137798e-006,0.94728911};
+		pos[]={13147.511,115.18273,10229.285};
+		dir[]={-0.73484373,-0.36007822,-0.57496911};
+		up[]={-0.28371751,0.93267512,-0.22200231};
+		aside[]={-0.61623818,1.1152006e-006,0.7875737};
 	};
 };
 binarizationWanted=0;
@@ -49390,16 +49390,126 @@ class Mission
 					class PositionInfo
 					{
 						position[]={12872.969,6.3833504,9375.5273};
-						angles[]={6.2791886,3.3158529,0};
+						angles[]={6.2791882,3.3158462,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
-						isPlayer=1;
 					};
 					id=9762;
 					type="rhsusf_army_ucp_combatcrewman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
 				};
 				class Item3
 				{
