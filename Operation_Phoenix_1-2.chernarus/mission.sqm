@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3095;
+		nextID=3268;
 	};
 	class Camera
 	{
-		pos[]={5343.7661,725.02057,9955.7979};
-		dir[]={-0.060227588,-0.62693477,0.77688354};
-		up[]={-0.048458725,0.77904087,0.62507683};
-		aside[]={0.9971202,9.1816764e-007,0.077295505};
+		pos[]={12964.687,31.035,9957.748};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -989,6 +989,8 @@ class ScenarioData
 	respawnDelay=10;
 	class Header
 	{
+		gameType="Coop";
+		minPlayers=1;
 		maxPlayers=64;
 	};
 	wreckRemovalMaxTime=3600;
@@ -19758,7 +19760,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13369.649,10.447824,2764.1978};
+						position[]={13369.65,10.447751,2764.198};
 						angles[]={0,0.0043982295,0};
 					};
 					side="West";
@@ -19770,7 +19772,6 @@ class Mission
 					};
 					id=3405;
 					type="rhsusf_army_ocp_arb_riflemanl";
-					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19794,6 +19795,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -19811,7 +19831,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -19830,7 +19850,57 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 				class Item7
@@ -88183,6 +88253,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_autocombat";
 							expression="if(_value) then {_this disableAI 'AUTOCOMBAT'}";
 							class Value
@@ -88200,7 +88289,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -88216,25 +88305,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -95690,8 +95760,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -95700,10 +95770,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -95816,8 +95886,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -95826,10 +95896,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -95855,8 +95925,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -95865,10 +95935,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -95981,8 +96051,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -95991,10 +96061,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -96034,8 +96104,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -96044,10 +96114,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -96160,8 +96230,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -96170,10 +96240,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -96250,8 +96320,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -96260,10 +96330,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -96376,8 +96446,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -96386,10 +96456,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -96865,8 +96935,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -96875,10 +96945,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -96991,8 +97061,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -97001,10 +97071,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -97030,8 +97100,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="Enh_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -97040,10 +97110,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -97156,8 +97226,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
@@ -97166,10 +97236,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -115715,6 +115785,7 @@ class Mission
 			{
 				position[]={17887.703,23.54248,9503.7441};
 			};
+			name="respawn_west";
 			id=13189;
 			type="ModuleRespawnPosition_F";
 			atlOffset=232.783;
