@@ -8,7 +8,7 @@ class EditorData
 	toggles=1089;
 	class ItemIDProvider
 	{
-		nextID=13211;
+		nextID=13215;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4306;
+		nextID=4652;
 	};
 	class Camera
 	{
-		pos[]={6292.8228,25.105116,-1865.025};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={12310.019,68.068245,8323.1953};
+		dir[]={-0.45773178,-0.69842225,0.55025983};
+		up[]={-0.44665524,0.71566546,0.53694266};
+		aside[]={0.76882237,-4.5425259e-007,0.63954586};
 	};
 };
 binarizationWanted=0;
@@ -16680,7 +16680,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=606;
+		items=607;
 		class Item0
 		{
 			dataType="Layer";
@@ -30619,8 +30619,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12876.972,6.3549037,9372.3105};
-				angles[]={6.2738566,0,0};
+				position[]={10626.839,211.52493,8075.0781};
+				angles[]={6.1782403,0,0};
 			};
 			areaSize[]={0.61425781,0,0.75195313};
 			flags=1;
@@ -83668,6 +83668,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{this addAction [""collect intel"",""collect.sqf""];}";
+				name="intel";
 				disableSimulation=1;
 			};
 			id=12073;
@@ -88600,8 +88602,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10631.845,214.79279,8078.167};
-				angles[]={0,3.9332566,0};
+				position[]={10631.884,214.79279,8078.2603};
+				angles[]={-0,3.9332566,0};
 			};
 			side="Empty";
 			class Attributes
@@ -115168,6 +115170,18 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item606
+		{
+			dataType="Trigger";
+			position[]={10608.47,210.99001,8074.6426};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=13213;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
