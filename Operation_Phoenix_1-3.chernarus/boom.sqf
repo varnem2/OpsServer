@@ -1,0 +1,1 @@
+heloObj setDamage 0.9; heloObj setFuel 0;
