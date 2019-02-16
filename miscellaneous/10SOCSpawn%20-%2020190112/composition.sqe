@@ -1,9 +1,9 @@
 version=53;
-center[]={8289.9004,177.38397,7705.1313};
+center[]={5955.6812,5,1681.8231};
 class items
 {
-    items=9;
-    class Item0 //10SOC
+	items=6;
+	class Item0
 	{
 		dataType="Group";
 		side="West";
@@ -15,2596 +15,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={16.977539,0.12313843,4.4990234};
-					angles[]={6.2703872,0.089151412,0.017595299};
-				};
-				side="West";
-				flags=6;
-				class Attributes
-				{
-					rank="COLONEL";
-					name="socOic";
-					description="SOC Commander@10th SOC";
-					isPlayable=1;
-				};
-				id=5909;
-				type="rhsusf_army_ucp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=5;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={19.37207,0.16111755,4.1728516};
-					angles[]={6.2703872,0.089151412,0.017595299};
-				};
-				side="West";
-				flags=4;
-				class Attributes
-				{
-					rank="MAJOR";
-					name="socNcoic_1";
-					description="SOC Executive Officer";
-					isPlayable=1;
-				};
-				id=6032;
-				type="rhsusf_army_ucp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=5;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={18.219727,0.12506104,2.9404297};
-					angles[]={6.2703872,0.089151412,0.017595299};
-				};
-				side="West";
-				flags=4;
-				class Attributes
-				{
-					rank="MAJOR";
-					name="socNcoic";
-					description="SOC NCOIC";
-					isPlayable=1;
-				};
-				id=6035;
-				type="rhsusf_army_ucp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=5;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=5908;
-	};
-
-	class Item1 //75th - 3rd Btn Command
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=3;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-5.2773438,0.23710632,9.1367188};
-					angles[]={0,4.5378566,0};
+					position[]={1.1577148,0.0014390945,12.815063};
 				};
 				side="West";
 				flags=7;
 				class Attributes
 				{
-					description="3rd BN Commander";
+					description="Spartan 6 @ Spartan";
+					isPlayer=1;
 					isPlayable=1;
 				};
-				id=62;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-4.4960938,0.18852997,9.9570313};
-					angles[]={0.015998369,4.5378566,6.2378831};
-				};
-				side="West";
-				flags=4;
-				class Attributes
-				{
-					description="3rd BN Executive Officer";
-					isPlayable=1;
-				};
-				id=63;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-4.2363281,0.1941452,8.8691406};
-					angles[]={0,4.5378566,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					description="3rd BN Sergeant Major";
-					isPlayable=1;
-				};
-				id=64;
-				type="rhsusf_army_ocp_squadleader";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male09ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=61;
-	};
-	class Item2 //75th - Alpha Company
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=3;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-2.1386719,0.12128448,7.4824219};
-					angles[]={0,4.4505901,0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					description="A/CO Commander";
-					isPlayable=1;
-				};
-				id=66;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.4316406,0.075004578,8.3671875};
-					angles[]={0.015998369,4.4505901,6.2658563};
-				};
-				side="West";
-				flags=4;
-				class Attributes
-				{
-					description="A/CO Executive Officer";
-					isPlayable=1;
-				};
-				id=67;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.078125,0.085876465,7.3046875};
-					angles[]={0,4.4505901,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					description="A/CO 1st Sergeant";
-					isPlayable=1;
-				};
-				id=68;
-				type="rhsusf_army_ocp_squadleader";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male09ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=65;
-	};
-	class Item3 //75th - Platoon Command (Patriot)
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=3;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-2.3125,0.10517883,11.996094};
-					angles[]={0,4.3633237,0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					description="Patriot Platoon Leader";
-					isPlayable=1;
-				};
-				id=70;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.6835938,0.091789246,12.939453};
-					angles[]={6.2698536,4.3633237,6.2418756};
-				};
-				side="West";
-				flags=4;
-				class Attributes
-				{
-					description="Patriot Platoon Medic";
-					isPlayable=1;
-				};
-				id=71;
-				type="rhsusf_army_ocp_medic";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.2382813,0.06716156,11.914063};
-					angles[]={0,4.3633237,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					description="Patriot Platoon Sergeant";
-					isPlayable=1;
-				};
-				id=72;
-				type="rhsusf_army_ocp_squadleader";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male09ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=69;
-	};
-	class Item4 //75th - Platoon Squad 1
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=12;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={2.4570313,0.19328308,0.68359375};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					rank="SERGEANT";
-					description="Patriot 1 Actual";
-					isPlayable=1;
-				};
-				id=74;
-				type="rhsusf_army_ocp_arb_squadleader";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male07ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.8320313,0.093650818,2.3085938};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-2 Rifleman";
-					isPlayable=1;
-				};
-				id=75;
-				type="rhsusf_army_ocp_arb_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male01ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.02;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.7070313,0.21826172,-0.31640625};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 1-1 Team Leader";
-					isPlayable=1;
-				};
-				id=76;
-				type="rhsusf_army_ocp_arb_teamleader";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male03ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.01;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item3
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.5820313,0.19127655,0.30859375};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 1-1 Autorifleman";
-					isPlayable=1;
-				};
-				id=77;
-				type="rhsusf_army_ocp_arb_autorifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male07ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.99000001;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item4
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.3320313,0.16648102,0.93359375};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-1 Grenadier";
-					isPlayable=1;
-				};
-				id=78;
-				type="rhsusf_army_ocp_arb_grenadier";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male02ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item5
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.0820313,0.14157867,1.5585938};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-1 Rifleman";
-					isPlayable=1;
-				};
-				id=79;
-				type="rhsusf_army_ocp_arb_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male02ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item6
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={2.9570313,0.11463165,2.1835938};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-1 Rifleman";
-					isPlayable=1;
-				};
-				id=80;
-				type="rhsusf_army_ocp_arb_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male05ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.99000001;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item7
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={4.4570313,0.1936264,-0.06640625};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 1-2 Team Leader";
-					isPlayable=1;
-				};
-				id=81;
-				type="rhsusf_army_ocp_arb_teamleader";
+				id=110;
+				type="B_recon_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2717,556 +139,22 @@ class items
 					nAttributes=4;
 				};
 			};
-			class Item8
+			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.2070313,0.16883087,0.55859375};
-					angles[]={0,4.2760568,0};
+					position[]={-0.72167969,0.0014390945,11.515015};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 1-2 Autorifleman";
+					description="1st Platoon Medic";
 					isPlayable=1;
 				};
-				id=82;
-				type="rhsusf_army_ocp_arb_autorifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.98000002;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item9
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.9570313,0.14974213,1.0585938};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-2 Grenadier";
-					isPlayable=1;
-				};
-				id=83;
-				type="rhsusf_army_ocp_arb_grenadier";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item10
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={3.9570313,0.12059784,1.6835938};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 1-2 AT";
-					isPlayable=1;
-				};
-				id=84;
-				type="rhsusf_army_ocp_arb_riflemanat";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male11ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item11
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={2.2070313,0.16845703,1.3085938};
-					angles[]={0,4.1015239,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					description="Patriot 1 Squad Medic";
-					isPlayable=1;
-				};
-				id=85;
-				type="rhsusf_army_ucp_arb_medic";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.99000001;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=73;
-	};
-	class Item5 //75th - Platoon Squad 2
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=12;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={5.3535156,0.08291626,1.9726563};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					rank="SERGEANT";
-					description="Patriot 2 Actual";
-					isPlayable=1;
-				};
-				id=87;
-				type="rhsusf_army_ocp_arb_squadleader";
+				id=111;
+				type="B_recon_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3322,7 +210,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=1;
+								value=0.94999999;
 							};
 						};
 					};
@@ -3379,24 +267,22 @@ class items
 					nAttributes=4;
 				};
 			};
-			class Item1
+			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.7285156,0.0059280396,3.5976563};
-					angles[]={0.0013372133,4.2760568,6.2405448};
+					position[]={2.6425781,0.0014390945,12.040039};
 				};
 				side="West";
-				flags=4;
+				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-2 Rifleman";
+					description="Spartan 7";
 					isPlayable=1;
 				};
-				id=88;
-				type="rhsusf_army_ocp_javelin_assistant";
+				id=112;
+				type="B_recon_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3433,7 +319,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male01ENG";
+								value="Male06ENG";
 							};
 						};
 					};
@@ -3509,24 +395,35 @@ class items
 					nAttributes=4;
 				};
 			};
-			class Item2
+		};
+		class Attributes
+		{
+		};
+		id=109;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=12;
+			class Item0
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.8535156,0.0014419556,2.9726563};
-					angles[]={0.0013372133,4.2760568,6.2405448};
+					position[]={-8.0126953,0.0014390945,8.6480713};
 				};
 				side="West";
-				flags=4;
+				flags=7;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-2 AT";
+					description="Squad Leader @ Spartin 1-1";
 					isPlayable=1;
 				};
-				id=89;
-				type="rhsusf_army_ocp_javelin";
+				id=114;
+				type="B_recon_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3563,7 +460,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male11ENG";
+								value="Male06ENG";
 							};
 						};
 					};
@@ -3582,7 +479,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=0.97000003;
+								value=0.99000001;
 							};
 						};
 					};
@@ -3639,24 +536,22 @@ class items
 					nAttributes=4;
 				};
 			};
-			class Item3
+			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.8535156,0.014976501,2.3476563};
-					angles[]={0,4.2760568,0};
+					position[]={-8.925293,0.0014390945,7.4360352};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-2 Grenadier";
+					description="Squad Medic";
 					isPlayable=1;
 				};
-				id=90;
-				type="rhsusf_army_ocp_arb_grenadier";
+				id=115;
+				type="B_recon_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3693,137 +588,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
-				};
-			};
-			class Item4
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={7.1035156,0.021659851,1.8476563};
-					angles[]={0,4.2760568,0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					skill=0.40000001;
-					description="Patriot 2-2 Autorifleman";
-					isPlayable=1;
-				};
-				id=91;
-				type="rhsusf_army_ocp_arb_autorifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
+								value="Male09ENG";
 							};
 						};
 					};
@@ -3899,25 +664,1315 @@ class items
 					nAttributes=4;
 				};
 			};
-			class Item5
+			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.3535156,0.035369873,1.2226563};
-					angles[]={0,4.2760568,0};
+					position[]={-8.9414063,0.0014390945,6.0280762};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 2-2 Team Leader";
+					description="Alpha TL ";
 					isPlayable=1;
 				};
-				id=92;
-				type="rhsusf_army_ocp_arb_teamleader";
+				id=116;
+				type="B_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male11ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.95999998;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-8.9775391,0.0014390945,4.2969971};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Autorifleman";
+					isPlayable=1;
+				};
+				id=117;
+				type="B_Patrol_Soldier_AR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male09ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-9.0712891,0.0014390945,2.9899902};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Grenadier";
+					isPlayable=1;
+				};
+				id=118;
+				type="B_recon_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male09ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-8.9433594,0.0014390945,1.2659912};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Rifleman";
+					isPlayable=1;
+				};
+				id=119;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male11ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.04;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-9.0722656,0.0014390945,-0.052978516};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Rifleman";
+					isPlayable=1;
+				};
+				id=120;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.97000003;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.1953125,0.0014390945,6.6530762};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo TL";
+					isPlayable=1;
+				};
+				id=121;
+				type="B_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male04ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.98000002;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.2314453,0.0014390945,4.9230957};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Autorifleman";
+					isPlayable=1;
+				};
+				id=122;
+				type="B_Patrol_Soldier_AR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item9
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.3242188,0.0014390945,3.6149902};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Grenadier";
+					isPlayable=1;
+				};
+				id=123;
+				type="B_recon_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male05ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.04;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item10
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.1972656,0.0014390945,1.8909912};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Rifleman";
+					isPlayable=1;
+				};
+				id=124;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male05ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item11
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.3266602,0.0014390945,0.57202148};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Rifleman";
+					isPlayable=1;
+				};
+				id=125;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=113;
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=12;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.28027344,0.0014390945,8.3400879};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					description="Squad Leader @ Spartin 1-2";
+					isPlayable=1;
+				};
+				id=127;
+				type="B_recon_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3955,6 +2010,2195 @@ class items
 									};
 								};
 								value="Male06ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.1933594,0.0014390945,7.1278076};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Squad Medic";
+					isPlayable=1;
+				};
+				id=128;
+				type="B_recon_medic_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male09ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.98000002;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.2094727,0.0014390945,5.7198486};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha TL ";
+					isPlayable=1;
+				};
+				id=129;
+				type="B_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male11ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.95999998;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.2456055,0.0014390945,3.9887695};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Autorifleman";
+					isPlayable=1;
+				};
+				id=130;
+				type="B_Patrol_Soldier_AR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male09ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.3393555,0.0014390945,2.6817627};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Grenadier";
+					isPlayable=1;
+				};
+				id=131;
+				type="B_recon_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male09ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.2114258,0.0014390945,0.95776367};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Rifleman";
+					isPlayable=1;
+				};
+				id=132;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male11ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.04;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.340332,0.0014390945,-0.36120605};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Alpha Rifleman";
+					isPlayable=1;
+				};
+				id=133;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.97000003;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.5366211,0.0014390945,6.3448486};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo TL";
+					isPlayable=1;
+				};
+				id=134;
+				type="B_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male04ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.98000002;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.5004883,0.0014390945,4.6148682};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Autorifleman";
+					isPlayable=1;
+				};
+				id=135;
+				type="B_Patrol_Soldier_AR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item9
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.4077148,0.0014390945,3.3067627};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Grenadier";
+					isPlayable=1;
+				};
+				id=136;
+				type="B_recon_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male05ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.04;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item10
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.534668,0.0014390945,1.5827637};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Rifleman";
+					isPlayable=1;
+				};
+				id=137;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male05ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item11
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.4052734,0.0014390945,0.26379395};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Bravo Rifleman";
+					isPlayable=1;
+				};
+				id=138;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=126;
+	};
+	class Item3
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=14;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={7.7768555,0.0014390945,7.6612549};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=231;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.8120117,0.0014390945,6.5893555};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=233;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={8.5576172,0.0014390945,6.5756836};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=235;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.8642578,0.0014390945,5.22229};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=237;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={8.5063477,0.0014390945,5.1533203};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=239;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.8383789,0.0014390945,3.8549805};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=241;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4035,19 +4279,17 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.2285156,0.050170898,2.2226563};
-					angles[]={0,4.2760568,0};
+					position[]={8.4887695,0.0014390945,3.6856689};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-1 Grenadier";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=93;
-				type="rhsusf_army_ocp_arb_grenadier";
+				id=243;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4084,7 +4326,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male02ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4103,7 +4345,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=1.04;
+								value=1.01;
 							};
 						};
 					};
@@ -4165,20 +4407,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4785156,0.065597534,1.5976563};
-					angles[]={0,4.2760568,0};
+					position[]={7.1411133,0.0014390945,2.0042725};
+					angles[]={0,0.035286386,0};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 2-1 Autorifleman";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=94;
-				type="rhsusf_army_ocp_arb_autorifleman";
+				id=278;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4215,7 +4455,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male07ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4234,7 +4474,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=0.99000001;
+								value=1.01;
 							};
 						};
 					};
@@ -4296,20 +4536,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.6035156,0.087928772,0.97265625};
-					angles[]={0,4.2760568,0};
+					position[]={6.1391602,0.0014390945,0.96704102};
+					angles[]={0,0.035286386,0};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.44999999;
-					rank="CORPORAL";
-					description="Patriot 2-1 Team Leader";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=95;
-				type="rhsusf_army_ocp_arb_teamleader";
+				id=279;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4346,7 +4584,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male03ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4427,18 +4665,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1035156,0.058082581,2.5976563};
-					angles[]={0,4.1015239,0};
+					position[]={7.8833008,0.0014390945,0.8918457};
+					angles[]={0,0.035286386,0};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					description="Patriot 2 Squad Medic";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=96;
-				type="rhsusf_army_ucp_arb_medic";
+				id=280;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4475,7 +4713,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male08ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4494,7 +4732,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=0.99000001;
+								value=1.01;
 							};
 						};
 					};
@@ -4556,19 +4794,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.8535156,0.034797668,3.4726563};
-					angles[]={0,4.2760568,0};
+					position[]={6.1430664,0.0014390945,-0.40100098};
+					angles[]={0,0.035286386,0};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-1 Rifleman";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=97;
-				type="rhsusf_army_ocp_arb_rifleman";
+				id=281;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4605,7 +4842,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male05ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4624,7 +4861,7 @@ class items
 										"SCALAR"
 									};
 								};
-								value=0.99000001;
+								value=1.01;
 							};
 						};
 					};
@@ -4686,19 +4923,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9785156,0.03528595,2.8476563};
-					angles[]={0,4.2760568,0};
+					position[]={7.7817383,0.0014390945,-0.52783203};
+					angles[]={0,0.035286386,0};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
-					skill=0.40000001;
-					description="Patriot 2-1 Rifleman";
+					description="Selection @ Selection";
 					isPlayable=1;
 				};
-				id=98;
-				type="rhsusf_army_ocp_arb_rifleman";
+				id=282;
+				type="B_Patrol_Soldier_A_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4735,7 +4971,7 @@ class items
 										"STRING"
 									};
 								};
-								value="Male02ENG";
+								value="Male01ENG";
 							};
 						};
 					};
@@ -4754,7 +4990,265 @@ class items
 										"SCALAR"
 									};
 								};
-								value=1;
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item12
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.0688477,0.0014390945,-1.7664795};
+					angles[]={0,0.035286386,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=283;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item13
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={7.7124023,0.0014390945,-1.9938965};
+					angles[]={0,0.035286386,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Selection @ Selection";
+					isPlayable=1;
+				};
+				id=284;
+				type="B_Patrol_Soldier_A_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="_this setFeatureType parseNumber (_value)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
 							};
 						};
 					};
@@ -4815,9 +5309,9 @@ class items
 		class Attributes
 		{
 		};
-		id=86;
+		id=230;
 	};
-	class Item6 //160th SOAR
+	class Item4
 	{
 		dataType="Group";
 		side="West";
@@ -4829,7 +5323,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.139648,0.14028931,0.24414063};
+					position[]={4.5004883,0.0014390945,-4.532959};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -4840,9 +5334,8 @@ class items
 					description="Commander@160th SOAR";
 					isPlayable=1;
 				};
-				id=6841;
+				id=245;
 				type="rhsusf_army_ocp_officer";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4979,7 +5472,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.151367,0.072402954,-0.65625};
+					position[]={3.512207,0.0014390945,-5.4333496};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -4991,9 +5484,8 @@ class items
 					description="NCOIC@160th SOAR";
 					isPlayable=1;
 				};
-				id=6842;
+				id=246;
 				type="rhsusf_army_ocp_arb_teamleader";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5130,7 +5622,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={28.121094,0.11769104,-0.75585938};
+					position[]={5.4819336,0.0014390945,-5.532959};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5142,9 +5634,8 @@ class items
 					description="XO@160th SOAR";
 					isPlayable=1;
 				};
-				id=6843;
+				id=247;
 				type="rhsusf_army_ocp_arb_teamleader";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5281,7 +5772,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={28.079102,0.069198608,-1.7548828};
+					position[]={5.4399414,0.0014390945,-6.5319824};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5291,9 +5782,8 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6844;
+				id=248;
 				type="rhsusf_army_ocp_arb_riflemanl";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5430,7 +5920,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.475586,0.05305481,-1.7714844};
+					position[]={4.8364258,0.0014390945,-6.548584};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5440,9 +5930,8 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6845;
+				id=249;
 				type="rhsusf_army_ocp_arb_riflemanl";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5579,7 +6068,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.831055,0.040588379,-1.6894531};
+					position[]={4.1918945,0.0014390945,-6.4665527};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5589,9 +6078,8 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6846;
+				id=250;
 				type="rhsusf_army_ocp_arb_riflemanl";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5728,7 +6216,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.227539,0.041687012,-1.7060547};
+					position[]={3.5883789,0.0014390945,-6.4831543};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5738,7 +6226,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6847;
+				id=251;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -5876,7 +6364,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.946289,0.029953003,-2.5097656};
+					position[]={5.3071289,0.0014390945,-7.2868652};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -5886,9 +6374,8 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6848;
+				id=252;
 				type="rhsusf_army_ocp_arb_riflemanl";
-				atlOffset=1.5258789e-005;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -6025,7 +6512,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.342773,0.020812988,-2.5263672};
+					position[]={4.7036133,0.0014390945,-7.3034668};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6035,7 +6522,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6849;
+				id=253;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6173,7 +6660,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.698242,0.02784729,-2.4443359};
+					position[]={4.059082,0.0014390945,-7.2214355};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6183,7 +6670,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6850;
+				id=254;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6321,7 +6808,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.094727,0.033248901,-2.4609375};
+					position[]={3.4555664,0.0014390945,-7.2380371};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6331,7 +6818,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6851;
+				id=255;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6469,7 +6956,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.947266,0.0098571777,-2.9423828};
+					position[]={5.3081055,0.0014390945,-7.7194824};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6479,7 +6966,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6852;
+				id=256;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6617,7 +7104,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.34375,0.015274048,-2.9589844};
+					position[]={4.7045898,0.0014390945,-7.736084};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6627,7 +7114,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6853;
+				id=257;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6765,7 +7252,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.699219,0.022293091,-2.8769531};
+					position[]={4.0600586,0.0014390945,-7.6540527};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6775,7 +7262,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6854;
+				id=258;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -6913,7 +7400,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.095703,0.027694702,-2.8935547};
+					position[]={3.456543,0.0014390945,-7.6706543};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -6923,7 +7410,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6855;
+				id=259;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -7061,7 +7548,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.814453,0.0014343262,-3.6972656};
+					position[]={5.175293,0.0014390945,-8.4743652};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -7071,7 +7558,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6856;
+				id=260;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -7209,7 +7696,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.210938,0.0068359375,-3.7138672};
+					position[]={4.5717773,0.0014390945,-8.4909668};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -7219,7 +7706,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6857;
+				id=261;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -7357,7 +7844,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.566406,0.013885498,-3.6318359};
+					position[]={3.9272461,0.0014390945,-8.4089355};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -7367,7 +7854,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6858;
+				id=262;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -7505,7 +7992,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={25.962891,0.019271851,-3.6484375};
+					position[]={3.3237305,0.0014390945,-8.4255371};
 					angles[]={0,0.0043982295,0};
 				};
 				side="West";
@@ -7515,7 +8002,7 @@ class items
 					description="Pilot";
 					isPlayable=1;
 				};
-				id=6859;
+				id=263;
 				type="rhsusf_army_ocp_arb_riflemanl";
 				class CustomAttributes
 				{
@@ -7652,329 +8139,9 @@ class items
 		class Attributes
 		{
 		};
-		id=6840;
-		atlOffset=1.5258789e-005;
+		id=244;
 	};
-	class Item7 //10th SFG Command (Outlaw) ODC - 0110
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=3;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={6.2509766,0.14888,-3.4399414};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					name="odaOIC_1";
-					description="18-A@10SFG ODC - 0110";
-					isPlayable=1;
-				};
-				id=6861;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					nAttributes=3;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={7.0878906,0.14401245,-3.5180664};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					name="odaOIC_2";
-					description="180-A@10SFG ODC - 0110";
-					isPlayable=1;
-				};
-				id=6862;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_featureType";
-						expression="_this setFeatureType parseNumber (_value)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=5;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={5.3417969,0.1542511,-3.3608398};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					name="odaOIC_3";
-					description="18-Z@10SFG ODC - 0110";
-					isPlayable=1;
-				};
-				id=6863;
-				type="rhsusf_army_ocp_officer";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					nAttributes=3;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=6860;
-	};
-    class Item8 //10th SFG ODA - 0114
+	class Item5
 	{
 		dataType="Group";
 		side="West";
@@ -7986,7 +8153,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.6542969,0.17633057,-4.7426758};
+					position[]={-9.0805664,0.0014390945,-3.9973145};
 				};
 				side="West";
 				flags=7;
@@ -7996,7 +8163,7 @@ class items
 					description="18-A@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6865;
+				id=265;
 				type="rhsusf_army_ocp_officer";
 				class CustomAttributes
 				{
@@ -8065,7 +8232,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.7792969,0.19638062,-5.2612305};
+					position[]={-8.9555664,0.017003059,-4.5158691};
 				};
 				side="West";
 				flags=5;
@@ -8075,7 +8242,7 @@ class items
 					description="180-A@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6866;
+				id=266;
 				type="rhsusf_army_ocp_officer";
 				atlOffset=0.015563965;
 				class CustomAttributes
@@ -8214,7 +8381,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9277344,0.2159729,-5.8305664};
+					position[]={-8.8071289,0.034092903,-5.0852051};
 				};
 				side="West";
 				flags=5;
@@ -8224,7 +8391,7 @@ class items
 					description="18-Z@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6867;
+				id=267;
 				type="rhsusf_army_ocp_officer";
 				atlOffset=0.032653809;
 				class CustomAttributes
@@ -8294,7 +8461,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.40625,0.17530823,-5.0825195};
+					position[]={-8.3286133,0.0014390945,-4.3371582};
 				};
 				side="West";
 				flags=5;
@@ -8303,7 +8470,7 @@ class items
 					description="18-B@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6868;
+				id=268;
 				type="rhsusf_army_ocp_machinegunner";
 				class CustomAttributes
 				{
@@ -8372,7 +8539,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.5146484,0.1782074,-5.668457};
+					position[]={-8.2202148,0.0014390945,-4.9230957};
 				};
 				side="West";
 				flags=5;
@@ -8381,7 +8548,7 @@ class items
 					description="18-B@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6869;
+				id=269;
 				type="rhsusf_army_ocp_machinegunner";
 				class CustomAttributes
 				{
@@ -8450,7 +8617,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1699219,0.17012024,-5.105957};
+					position[]={-7.5649414,0.0014390945,-4.3605957};
 				};
 				side="West";
 				flags=5;
@@ -8459,7 +8626,7 @@ class items
 					description="18-C@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6870;
+				id=270;
 				type="rhsusf_army_ocp_explosives";
 				class CustomAttributes
 				{
@@ -8528,7 +8695,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.0351563,0.17546082,-5.8139648};
+					position[]={-7.699707,0.0014390945,-5.0686035};
 				};
 				side="West";
 				flags=5;
@@ -8537,7 +8704,7 @@ class items
 					description="18-C@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6871;
+				id=271;
 				type="rhsusf_army_ocp_explosives";
 				class CustomAttributes
 				{
@@ -8606,7 +8773,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.9091797,0.1650238,-5.1186523};
+					position[]={-6.8256836,0.0014390945,-4.373291};
 				};
 				side="West";
 				flags=5;
@@ -8615,7 +8782,7 @@ class items
 					description="18-D@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6872;
+				id=272;
 				type="rhsusf_army_ocp_medic";
 				class CustomAttributes
 				{
@@ -8684,7 +8851,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.9160156,0.17391968,-6.5610352};
+					position[]={-6.8188477,0.0014390945,-5.8156738};
 				};
 				side="West";
 				flags=5;
@@ -8693,7 +8860,7 @@ class items
 					description="18-D@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6873;
+				id=273;
 				type="rhsusf_army_ocp_medic";
 				class CustomAttributes
 				{
@@ -8762,7 +8929,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.8349609,0.16969299,-5.7885742};
+					position[]={-6.8999023,0.0014390945,-5.0432129};
 				};
 				side="West";
 				flags=5;
@@ -8771,7 +8938,7 @@ class items
 					description="18-D@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6874;
+				id=274;
 				type="rhsusf_army_ocp_medic";
 				class CustomAttributes
 				{
@@ -8840,7 +9007,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.4648438,0.16137695,-5.1567383};
+					position[]={-6.2700195,0.0014390945,-4.411377};
 				};
 				side="West";
 				flags=5;
@@ -8849,7 +9016,7 @@ class items
 					description="18-E@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6875;
+				id=275;
 				type="rhsusf_army_ocp_uav";
 				class CustomAttributes
 				{
@@ -8918,7 +9085,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.4433594,0.16546631,-5.793457};
+					position[]={-6.2915039,0.0014390945,-5.0480957};
 				};
 				side="West";
 				flags=5;
@@ -8927,7 +9094,7 @@ class items
 					description="18-E@10SFG ODA - 0114";
 					isPlayable=1;
 				};
-				id=6876;
+				id=276;
 				type="rhsusf_army_ocp_uav";
 				class CustomAttributes
 				{
@@ -8995,8 +9162,6 @@ class items
 		class Attributes
 		{
 		};
-		id=6864;
+		id=264;
 	};
-
-
 };
