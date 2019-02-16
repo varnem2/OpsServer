@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2426;
+		nextID=2660;
 	};
 	class Camera
 	{
-		pos[]={9947.1123,129.89284,2033.2957};
-		dir[]={0.68897676,-0.70801008,-0.15583628};
-		up[]={0.69076455,0.70589101,-0.15623552};
-		aside[]={-0.22063608,1.7985003e-006,-0.97546118};
+		pos[]={10456.857,12.767398,2254.6777};
+		dir[]={-0.21374008,-0.52562523,0.82344186};
+		up[]={-0.13206136,0.8507145,0.50876796};
+		aside[]={0.96793365,-8.89886e-007,0.25124961};
 	};
 };
 binarizationWanted=0;
@@ -169,8 +169,6 @@ addons[]=
 	"rhs_c_cars",
 	"CUP_WheeledVehicles_BTR90",
 	"cba_modules",
-	"AchillesEffects",
-	"achilles_modules_f_achilles",
 	"CUP_WheeledVehicles_Ural",
 	"A3_Structures_F_Exp_Industrial_SurfaceMine_01",
 	"A3_Structures_F_Exp_Industrial_Materials",
@@ -183,7 +181,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=97;
+		items=95;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -778,36 +776,24 @@ class AddonsMetaData
 		};
 		class Item91
 		{
-			className="AchillesEffects";
-			name="AchillesEffects";
-			author="ArmA 3 Achilles Mod Inc.";
-		};
-		class Item92
-		{
-			className="achilles_modules_f_achilles";
-			name="achilles_modules_f_achilles";
-			author="ArmA 3 Achilles Mod Inc.";
-		};
-		class Item93
-		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item94
+		class Item92
 		{
 			className="A3_Structures_F_Exp_Industrial";
 			name="Arma 3 Apex - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item95
+		class Item93
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item96
+		class Item94
 		{
 			className="A3_Characters_F_Patrol";
 			name="Arma 3 Patrol - Characters and Clothing";
@@ -16525,7 +16511,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=438;
+		items=437;
 		class Item0
 		{
 			dataType="Layer";
@@ -78712,40 +78698,6 @@ class Mission
 		};
 		class Item414
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10458.174,12.05796,2253.4446};
-			};
-			id=11352;
-			type="ModuleLightSource_F";
-			atlOffset=5.9500475;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleLightSource_F_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="white";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item415
-		{
 			dataType="Trigger";
 			position[]={10150.995,6.0011048,1966.0823};
 			angle=6.0000019;
@@ -78761,7 +78713,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=-0.0042347908;
 		};
-		class Item416
+		class Item415
 		{
 			dataType="Group";
 			side="East";
@@ -79154,7 +79106,7 @@ class Mission
 			id=11354;
 			atlOffset=4.7683716e-007;
 		};
-		class Item417
+		class Item416
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79213,7 +79165,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item418
+		class Item417
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -79342,7 +79294,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item419
+		class Item418
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -79565,7 +79517,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item420
+		class Item419
 		{
 			dataType="Group";
 			side="East";
@@ -80887,7 +80839,7 @@ class Mission
 			};
 			id=11382;
 		};
-		class Item421
+		class Item420
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80946,7 +80898,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item422
+		class Item421
 		{
 			dataType="Trigger";
 			position[]={9938.71,6.0100002,1968.3677};
@@ -80959,7 +80911,7 @@ class Mission
 			id=11397;
 			type="EmptyDetector";
 		};
-		class Item423
+		class Item422
 		{
 			dataType="Group";
 			side="East";
@@ -81184,7 +81136,7 @@ class Mission
 			};
 			id=11400;
 		};
-		class Item424
+		class Item423
 		{
 			dataType="Group";
 			side="East";
@@ -81407,7 +81359,7 @@ class Mission
 			};
 			id=11407;
 		};
-		class Item425
+		class Item424
 		{
 			dataType="Group";
 			side="East";
@@ -81631,7 +81583,7 @@ class Mission
 			};
 			id=11414;
 		};
-		class Item426
+		class Item425
 		{
 			dataType="Layer";
 			name="Vehicle Shed [OPF]";
@@ -82056,7 +82008,7 @@ class Mission
 			id=11469;
 			atlOffset=0.027239799;
 		};
-		class Item427
+		class Item426
 		{
 			dataType="Trigger";
 			position[]={9939.0752,6.0100002,1966.4873};
@@ -82070,7 +82022,7 @@ class Mission
 			id=11470;
 			type="EmptyDetector";
 		};
-		class Item428
+		class Item427
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -82293,7 +82245,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item429
+		class Item428
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -82516,7 +82468,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item430
+		class Item429
 		{
 			dataType="Group";
 			side="West";
@@ -82979,7 +82931,7 @@ class Mission
 			};
 			id=11477;
 		};
-		class Item431
+		class Item430
 		{
 			dataType="Group";
 			side="West";
@@ -83377,7 +83329,7 @@ class Mission
 			};
 			id=11481;
 		};
-		class Item432
+		class Item431
 		{
 			dataType="Group";
 			side="West";
@@ -84808,6 +84760,7 @@ class Mission
 					};
 					id=11497;
 					type="B_Patrol_Soldier_A_F";
+					atlOffset=9.5367432e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -84926,7 +84879,7 @@ class Mission
 			};
 			id=11485;
 		};
-		class Item433
+		class Item432
 		{
 			dataType="Group";
 			side="West";
@@ -86229,6 +86182,7 @@ class Mission
 					};
 					id=11509;
 					type="B_Patrol_Soldier_A_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -86475,7 +86429,7 @@ class Mission
 			};
 			id=11498;
 		};
-		class Item434
+		class Item433
 		{
 			dataType="Group";
 			side="West";
@@ -88287,7 +88241,7 @@ class Mission
 			};
 			id=11511;
 		};
-		class Item435
+		class Item434
 		{
 			dataType="Group";
 			side="West";
@@ -90536,6 +90490,7 @@ class Mission
 					};
 					id=11542;
 					type="rhsusf_army_ocp_arb_riflemanl";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -91117,7 +91072,7 @@ class Mission
 			};
 			id=11526;
 		};
-		class Item436
+		class Item435
 		{
 			dataType="Group";
 			side="West";
@@ -91682,6 +91637,7 @@ class Mission
 					};
 					id=11553;
 					type="rhsusf_army_ocp_explosives";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -91760,6 +91716,7 @@ class Mission
 					};
 					id=11554;
 					type="rhsusf_army_ocp_medic";
+					atlOffset=1.2397766e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -92140,7 +92097,7 @@ class Mission
 			};
 			id=11546;
 		};
-		class Item437
+		class Item436
 		{
 			dataType="Group";
 			side="West";
@@ -92450,6 +92407,7 @@ class Mission
 					};
 					id=11567;
 					type="B_Patrol_Soldier_A_F";
+					atlOffset=9.5367432e-007;
 				};
 			};
 			class Attributes
