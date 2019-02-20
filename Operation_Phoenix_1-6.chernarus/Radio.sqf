@@ -10,7 +10,7 @@
 /* 8 code executed on completion */	{execVM "hide.sqf"; hint "You finished removing the core, your fingers are starting to feel numb already"},
 /* 9 code executed on interruption */	{hint "You drop your tools on the floor like an idiot"},
 /* 10 arguments */			[],
-/* 11 action duration */		5,
+/* 11 action duration */		300,
 /* 12 priority */			0,
 /* 13 remove on completion */		true,
 /* 14 show unconscious */		false
